@@ -1,0 +1,23 @@
+body{
+    background-color: blue;
+}
+
+form{
+
+    background-color: yellow;
+    font-size: larger;
+    border: solid;
+    border-color: red;
+    text-decoration-color: aqua;
+    font: green;
+}
+
+#submit{
+
+    background-color: aqua;
+    font: bold;
+}
+
+#Welcome{
+    font: red;
+}

@@ -1,0 +1,22 @@
+td{
+    border : 2px solid red ;
+    text-align: center;
+}
+
+body{
+
+    background-color: rgb(177, 114, 146);
+}
+
+li{
+    background-color: blue;
+}
+
+ul{
+    background-color: aqua;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower Bound Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="number"], button {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lower Bound Finder</h1>
+        <label for="inputN">Enter the value of n:</label>
+        <input type="number" id="inputN">
+        <div id="arrInputs"></div>
+        <label for="inputTarget">Enter the target:</label>
+        <input type="number" id="inputTarget">
+        <button onclick="findTarget()">Find Target</button>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        function findTarget() {
+            var n = parseInt(document.getElementById('inputN').value);
+            var arrInputs = document.getElementById('arrInputs');
+            arrInputs.innerHTML = '';
+            for (var i = 0; i < n; i++) {
+                var input = document.createElement('input');
+                input.type = 'number';
+                input.placeholder = 'Enter value ' + (i + 1);
+                arrInputs.appendChild(input);
+            }
+            var target = parseInt(document.getElementById('inputTarget').value);
+            var output = document.getElementById('output');
+            output.innerHTML = '';
+
+            for (var i = 0; i < n; i++) {
+                var value = parseInt(arrInputs.children[i].value);
+                if (value > target) {
+                    output.innerText = 'Output: ' + arrInputs.children[i - 1].value;
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

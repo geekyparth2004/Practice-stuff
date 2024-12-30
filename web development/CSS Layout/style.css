@@ -1,0 +1,59 @@
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 5px;
+}
+
+body{
+    background-color: aqua;
+}
+
+.main{
+    border: solid red;
+}
+
+div ul {
+    background-color: beige;
+    padding: 0px;
+    margin: 0px;
+}
+
+.box{
+    border: solid;
+    position: absolute;
+    top: 150px;
+    padding-right: 250px ;
+    padding-bottom: 250px;
+    background-color: blue;
+
+}
+
+.box2{
+
+    left: 350px;
+    
+}
+
+.welcome{
+
+    position: absolute;
+    top: 450px;
+    margin-left: 50px;
+    border: solid black;
+    padding: 15px;
+    color: white;
+    background-color: black;
+
+}
+
+footer{
+    position: relative;
+    top: 85vh;
+    border: solid;
+    background-color: blueviolet;
+    color: brown;
+}
+

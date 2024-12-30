@@ -1,0 +1,17 @@
+.cinema-hall {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.seat {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: red;
+}
